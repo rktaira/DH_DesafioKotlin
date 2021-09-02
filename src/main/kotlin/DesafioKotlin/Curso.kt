@@ -1,12 +1,11 @@
 package DesafioKotlin
 
-class Aluno(
-    val nome: String,
-    val sobrenome: String,
-    val codigo: Int
+class Curso(
+    var nome: String,
+    var codigo: Int
 ) {
     //Sobrescrevendo equals para comparar o código de aluno.
     override fun equals(other: Any?): Boolean {
-        return(other is Aluno && other.codigo == this.codigo)
+        return(other is Curso && other.codigo == this.codigo)
     }
 }
