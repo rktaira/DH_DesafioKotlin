@@ -1,10 +1,10 @@
 package DesafioKotlin
 
 class Professor(
-    var nome: String,
-    var sobrenome: String,
+    val nome: String,
+    val sobrenome: String,
     var tempoDeCasa: Int,
-    var codigo: Int
+    val codigo: Int
 ) {
     //Sobrescrevendo equals para comparar o código de aluno.
     override fun equals(other: Any?): Boolean {
