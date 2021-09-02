@@ -1,6 +1,6 @@
 package DesafioKotlin
 
-class Professor(
+open class Professor(
     val nome: String,
     val sobrenome: String,
     var tempoDeCasa: Int,
@@ -11,3 +11,5 @@ class Professor(
         return (other is Professor && other.codigo == this.codigo)
     }
 }
+
+//Parte D. Alterações: abrir classe professor para as classes ProfessorTitular e ProfessorAdjunto herdarem.
