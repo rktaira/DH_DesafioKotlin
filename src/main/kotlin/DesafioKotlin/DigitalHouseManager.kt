@@ -5,4 +5,5 @@ class DigitalHouseManager(
     professores: List<Professor>,
     cursos: List<Curso>
 ) {
+    
 }
