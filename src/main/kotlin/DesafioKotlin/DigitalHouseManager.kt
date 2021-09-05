@@ -1,4 +1,8 @@
 package DesafioKotlin
 
-class DigitalHouseManager {
+class DigitalHouseManager(
+    alunos: List<Aluno>,
+    professores: List<Professor>,
+    cursos: List<Curso>
+) {
 }
