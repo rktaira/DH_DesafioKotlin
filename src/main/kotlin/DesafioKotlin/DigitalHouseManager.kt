@@ -1,0 +1,4 @@
+package DesafioKotlin
+
+class DigitalHouseManager {
+}
