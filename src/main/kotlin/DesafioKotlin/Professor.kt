@@ -6,7 +6,7 @@ open class Professor(
     var tempoDeCasa: Int,
     val codigo: Int
 ) {
-    //Sobrescrevendo equals para comparar o código de aluno.
+    //Sobrescrevendo equals para comparar o código de professor.
     override fun equals(other: Any?): Boolean {
         return (other is Professor && other.codigo == this.codigo)
     }

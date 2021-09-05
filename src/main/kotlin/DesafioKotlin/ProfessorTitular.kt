@@ -8,4 +8,3 @@ class ProfessorTitular(
     var especialidade: String
 ) : Professor(nome, sobrenome, tempoDeCasa, codigo) {
 }
-)

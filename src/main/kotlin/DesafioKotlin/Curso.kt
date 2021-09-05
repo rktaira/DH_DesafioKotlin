@@ -2,10 +2,15 @@ package DesafioKotlin
 
 class Curso(
     val nome: String,
-    val codigo: Int
+    val codigo: Int,
+    var profTitular: ProfessorTitular,
+    var profAdjunto: ProfessorAdjunto,
+    val alunosMax: Int
 ) {
-    //Sobrescrevendo equals para comparar o código de aluno.
+    //Sobrescrevendo equals para comparar o código de curso.
     override fun equals(other: Any?): Boolean {
         return(other is Curso && other.codigo == this.codigo)
     }
 }
+
+//Parte E, 1) Adicionar os parâmetros profTitular, profAdjunto e alunosMax
