@@ -3,11 +3,11 @@ package DesafioKotlin
 class Curso(
     val nome: String,
     val codigo: Int,
-    var profTitular: ProfessorTitular,
-    var profAdjunto: ProfessorAdjunto,
-    val alunosMax: Int
-) {
+    val alunosMax: Int,
+    var profTitular: ProfessorTitular? = null,
+    var profAdjunto: ProfessorAdjunto? = null,
     var listaAlunos: MutableList<Aluno> = mutableListOf()
+) {
 
     //Sobrescrevendo equals para comparar o código de curso.
     override fun equals(other: Any?): Boolean {
@@ -19,11 +19,11 @@ class Curso(
             println("Erro: Aluno já está matriculado neste curso.")
             return false
         } else if (listaAlunos.size >= alunosMax) {
-            println("Erro: Número máximo de alunos já foi atingido.")
+            println("Erro: Número máximo de alunos já foi atingido, não há vagas")
             return false
         } else {
             listaAlunos.add(umAluno)
-            println("Aluno incluído com sucesso!")
+            println("Aluno(a) ${umAluno.nome} ${umAluno.sobrenome} foi matriculado(a) no curso $codigo - $nome")
             return true
         }
     }
@@ -38,6 +38,7 @@ class Curso(
             return true
         }
     }
+
 }
 
 
