@@ -23,7 +23,7 @@ class Curso(
             return false
         } else {
             listaAlunos.add(umAluno)
-            println("Aluno(a) ${umAluno.nome} ${umAluno.sobrenome} foi matriculado(a) no curso $codigo - $nome")
+            println("${umAluno.nome} ${umAluno.sobrenome} foi matriculado(a) no curso $codigo-$nome")
             return true
         }
     }

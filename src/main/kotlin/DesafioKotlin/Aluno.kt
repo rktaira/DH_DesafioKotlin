@@ -7,6 +7,6 @@ class Aluno(
 ) {
     //Sobrescrevendo equals para comparar o código de aluno.
     override fun equals(other: Any?): Boolean {
-        return(other is Aluno && other.codigo == this.codigo)
+        return (other is Aluno && other.codigo == this.codigo)
     }
 }
