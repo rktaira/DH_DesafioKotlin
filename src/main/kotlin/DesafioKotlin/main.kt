@@ -2,6 +2,8 @@ package DesafioKotlin
 
 fun main(){
 
+
+    
     val teste = DigitalHouseManager()
     for (i in teste.cursos) {
         println(i.nome)
